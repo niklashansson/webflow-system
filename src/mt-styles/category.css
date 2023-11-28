@@ -1,0 +1,13 @@
+.mt-category_inner {
+  width: 100%;
+  max-width: var(--mt-container-width-1);
+  padding-left: var(--mt-page-padding-1);
+  padding-right: var(--mt-page-padding-1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-category_section {
+  padding-top: var(--mt-section-padding-1);
+  padding-bottom: var(--mt-section-padding-1);
+}

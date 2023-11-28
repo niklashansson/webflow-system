@@ -1,0 +1,25 @@
+[color-mode='2'],
+[class*='cm2'] {
+  --color--1--bg1: var(--color--2--bg1);
+  --color--1--bg2: var(--color--2--bg2);
+  --color--1--bg3: var(--color--2--bg3);
+  --color--1--fc1: var(--color--2--fc1);
+  --color--1--fc2: var(--color--2--fc2);
+  --color--1--fc3: var(--color--2--fc3);
+  --color--1--bc1: var(--color--2--bc1);
+  --color--1--bc2: var(--color--2--bc2);
+  /* button mode 1 */
+  --color--1--bm1--text: var(--color--2--bm1--text);
+  --color--1--bm1--text-hover: var(--color--2--bm1--text-hover);
+  --color--1--bm1--background: var(--color--2--bm1--background);
+  --color--1--bm1--background-hover: var(--color--2--bm1--background-hover);
+  --color--1--bm1--border: var(--color--2--bm1--border);
+  --color--1--bm1--border-hover: var(--color--2--bm1--border-hover);
+  /* button mode 2 */
+  --color--1--bm2--text: var(--color--2--bm2--text);
+  --color--1--bm2--text-hover: var(--color--2--bm2--text-hover);
+  --color--1--bm2--background: var(--color--2--bm2--background);
+  --color--1--bm2--background-hover: var(--color--2--bm2--background-hover);
+  --color--1--bm2--border: var(--color--2--bm2--border);
+  --color--1--bm2--border-hover: var(--color--2--bm2--border-hover);
+}

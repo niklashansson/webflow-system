@@ -1,0 +1,164 @@
+/* CUSTOM STYLES */
+
+/* remove scroll bounce */
+body {
+  overscroll-behavior: none;
+}
+
+/* first section compensation for fixed navbar */
+.w-nav + [add-nav-compensation]::before {
+  content: '';
+  display: block;
+  padding-top: 4.25rem;
+}
+
+@media screen and (max-width: 991px) {
+  .w-nav + [add-nav-compensation]::before {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-nav + [add-nav-compensation]::before {
+    padding-top: 2rem;
+  }
+}
+
+/* prevent horizontal scroll */
+.page_wrap {
+  overflow: clip;
+}
+
+/* enable setting w-button border radius with utilities */
+.w-button {
+  border-radius: var(--border-radius);
+}
+
+/* hide container ::before & ::after */
+.w-container::before,
+.w-container::after {
+  display: none;
+}
+
+/* removes space added below webflow embed due to line height */
+.w-embed {
+  line-height: 0;
+}
+
+/* empty div in designer view when utilities are added */
+.wf-empty[class*='--'] {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+/* flex: reverse direction */
+[reverse-direction='true'] {
+  flex-direction: row-reverse;
+}
+
+/* default btn */
+.w-button {
+  border-radius: var(--br3);
+  border-width: var(--bw1);
+}
+
+/* btn hovers */
+@media (pointer: fine) {
+  a:hover [btn-main='icon'] {
+    transform: translateX(0.2rem);
+  }
+}
+
+/* link styles */
+.link[link-icon='1'],
+.link[link-icon='2'] {
+  padding-right: 1.125em;
+}
+
+.link[link-icon='1'] [link-icon='1'] {
+  display: block;
+}
+
+.link[link-icon='2'] [link-icon='2'] {
+  display: block;
+}
+
+.link [link-icon] {
+  display: none;
+}
+
+/* form styles */
+/* field placeholder */
+.w-input::placeholder,
+.w-select::placeholder {
+  color: var(--fc2);
+}
+/* field focus */
+.w-input:focus,
+.w-select:focus {
+  border-color: var(--bc2);
+}
+/* checkbox and radio selected */
+.w-checkbox-input.w--redirected-checked,
+.w-radio-input.w--redirected-checked {
+  background-color: rgba(var(--brand-1), 1);
+  border-color: rgba(var(--brand-1), 1);
+}
+
+/* richtext modes */
+:is([class*='rit2'], [rt-mode='2']) {
+  font-weight: var(--fw1);
+}
+:is([class*='rit2'], [rt-mode='2']) :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: var(--fw2);
+  font-size: inherit;
+  letter-spacing: var(--ls1);
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+/* default section border */
+:is(section, footer, header)[border-section='true']::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: var(--pp1);
+  right: var(--pp1);
+  height: var(--bw1);
+  background-color: var(--bc1);
+}
+
+/* swiper styles */
+.homewebflow2_tabs_link {
+  cursor: pointer;
+}
+
+.homewebflow2_tab_content {
+  transition-duration: 500ms;
+  transition-property: all;
+}
+
+.homewebflow2_tabs_link .homewebflow2_tab_content {
+  max-height: 0;
+  overflow-y: hidden;
+}
+
+.homewebflow2_tabs_link.homewebflow2_tabs_link-active .homewebflow2_tab_content {
+  max-height: none;
+  overflow-y: hidden;
+}
+
+.projecthead1_logotype--vb1 .w-embed {
+  width: 3rem;
+}
+
+.w-script:before,
+.w-script:after {
+  content: none;
+  display: none;
+}
+
+.w-script {
+  background-color: none;
+}
