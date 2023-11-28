@@ -1,0 +1,8 @@
+/* .link,
+.button,
+button,
+a,
+[btn-mode] {
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: 150ms;
+} */

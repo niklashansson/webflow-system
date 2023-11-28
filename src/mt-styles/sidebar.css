@@ -1,0 +1,195 @@
+@import './variables.css';
+
+/* sidebar toggle button */
+.mt-sidebar_toggle-btn-wrap {
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  pointer-events: none;
+}
+
+.mt-sidebar_toggle-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  pointer-events: auto;
+}
+
+.mt-sidebar_btn-icon-open {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.mt-sidebar_btn-icon-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.mt-sidebar_spacer {
+  width: var(--mt-sidebar-width);
+}
+
+.mt-sidebar {
+  width: 100%;
+  max-width: var(--mt-sidebar-width);
+  font-family: var(--mt-font-family-1);
+  background-color: var(--mt-light-1);
+  position: fixed;
+  top: var(--mt-navbar-height);
+  bottom: 0;
+  left: 0;
+  right: auto;
+}
+
+.mt-sidebar_wrap {
+  border-right: var(--mt-border-weight-1) solid var(--mt-border-color-1);
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: auto;
+}
+
+/* list item styles */
+.mt-sidebar_menu-item {
+  flex-direction: column;
+  flex: 1;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.mt-sidebar_menu-item-title {
+  width: 100%;
+  padding: var(--mt-sidebar-gap-1) var(--mt-sidebar-gap-2);
+  font-size: 1.125rem;
+  display: inline-block;
+}
+
+/* list item dropdown links */
+.mt-sidebar_menu-item-links {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mt-sidebar_menu-item-link {
+  width: 100%;
+  padding: var(--mt-sidebar-gap-1) var(--mt-sidebar-gap-1) var(--mt-sidebar-gap-1)
+    var(--mt-page-padding-1);
+  display: inline-block;
+  color: var(--mt-dark-2);
+  text-decoration: none;
+  font-weight: var(mt-font-weight-1);
+}
+
+/* list item toggle button styles */
+.mt-sidebar_menu-item-toggle-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: 0;
+  transform: translate(-1.5rem, -0.25rem) translate(0, 50%);
+}
+
+.mt-sidebar_menu-item-toggle-btn-icon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+/* menu item pseudo element */
+.mt-sidebar_menu-item:first-child {
+  padding-top: 0.75rem;
+}
+
+.mt-sidebar_menu-item:last-child {
+  padding-bottom: 0.75rem;
+}
+
+.mt-sidebar_menu-item::after {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--mt-border-color-1);
+}
+
+.mt-sidebar_menu-item:last-child::after {
+  content: none;
+}
+
+@media screen and (max-width: 991px) {
+  .mt-sidebar_component {
+    z-index: 998;
+    transform: translate(-100%);
+  }
+
+  .mt-sidebar_menu-item-link {
+    padding-left: var(--mt-page-padding-1);
+    padding-right: var(--mt-page-padding-1);
+  }
+
+  .mt-sidebar_toggle-btn-wrap {
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    top: auto;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+  }
+
+  .mt-sidebar_btn-icon-open {
+    color: var(--mt-dark-1);
+    position: absolute;
+  }
+
+  .mt-sidebar_toggle-btn {
+    border: var(--mt-border-width-1) solid var(--mt-border-color-1);
+  }
+
+  .mt-sidebar_btn-icon-close {
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: 0;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mt-sidebar_menu-item-link {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mt-sidebar_component {
+    max-width: none;
+  }
+}

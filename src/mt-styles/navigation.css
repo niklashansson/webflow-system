@@ -1,0 +1,33 @@
+@import './variables.css';
+
+.mt-banner {
+  z-index: 999;
+  font-family: var(--mt-font-family-1);
+  width: 100%;
+  background-color: var(--mt-light-1);
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+}
+
+.mt-banner_spacer {
+  height: var(--mt-navbar-height);
+}
+
+.mt-banner_inner {
+  border-bottom: var(--mt-border-weight-1) solid var(--mt-border-color-1);
+  justify-content: space-between;
+  align-items: center;
+  min-height: var(--mt-navbar-height);
+  padding-left: var(--mt-page-padding-2);
+  padding-right: var(--mt-page-padding-2);
+  display: flex;
+}
+
+.mt-banner_logo {
+  font-size: 1.5rem;
+  color: var(--mt-dark-1);
+  text-decoration: none;
+}

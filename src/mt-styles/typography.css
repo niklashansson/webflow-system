@@ -1,0 +1,41 @@
+[class*='mtfs'] {
+  font-family: var(--mt-font-family-1);
+  font-weight: var(--mt-font-weight-1);
+  line-height: var(--mt-line-height-2);
+}
+
+/* default header styles */
+[class*='mtfs1'],
+[class*='mtfs2'],
+[class*='mtfs3'],
+[class*='mtfs4'],
+[class*='mtfs5'],
+[class*='mtfs6'] {
+  font-weight: var(--mt-font-weight-2);
+  letter-spacing: var(--mt-letter-spacing-2);
+  line-height: var(--mt-line-height-1);
+}
+
+[class*='mtfs1'] {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+[class*='mtfs2'] {
+  font-size: 2rem;
+  font-weight: var(--mt-font-weight-1);
+}
+[class*='mtfs3'] {
+  font-size: 1.5rem;
+}
+[class*='mtfs4'] {
+  font-size: 1.25rem;
+}
+[class*='mtfs5'] {
+  font-size: 1.125rem;
+}
+[class*='mtfs6'] {
+  font-size: 1rem;
+}
+[class*='mtfs7'] {
+  font-size: 1rem;
+}

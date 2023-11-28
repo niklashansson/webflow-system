@@ -1,0 +1,6 @@
+/* Adds asteriks to required input fields */
+label:has(+ :is(input[required], textarea[required]))::after {
+    content: ' *';
+    color: red;
+    font-weight: bold;
+  }

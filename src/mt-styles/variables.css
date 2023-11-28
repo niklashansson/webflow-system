@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=FamiljenGrotesk&display=swap');
+
+:root {
+  --mt-border-weight-1: 1px;
+  /* color variables */
+  --mt-dark-1: rgb(0, 0, 0);
+  --mt-dark-2: rgb(54, 54, 54);
+  --mt-light-1: rgb(255, 255, 255);
+  --mt-border-color-1: rgba(0, 0, 0, 0.07);
+  --mt-border-radius-1: 100vw;
+  /* typograph variables */
+  --mt-font-family-1: 'Ballinger';
+  --mt-font-weight-1: 400;
+  --mt-font-weight-2: 500;
+  --mt-font-weight-3: 700;
+  --mt-line-height-1: 1.2;
+  --mt-line-height-2: 1.6;
+  --mt-letter-spacing-1: 1;
+  --mt-letter-spacing-2: -0.025em;
+  /* size variables */
+  --mt-page-padding-1: 3rem;
+  --mt-page-padding-2: 1.75rem;
+  --mt-section-padding-1: 3rem;
+  /* layout variables */
+  --mt-container-width-1: 64rem;
+  --mt-sidebar-width: 20rem;
+  --mt-navbar-height: 4.25rem;
+  /* sidebar variables */
+  --mt-sidebar-gap-1: 0.5rem;
+  --mt-sidebar-gap-2: 1.75rem;
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --mt-page-padding-1: 1.75rem;
+    --mt-page-padding-2: 1.75rem;
+    --mt-section-padding-1: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --mt-section-padding-1: 1.75rem;
+  }
+}

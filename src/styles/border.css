@@ -1,0 +1,26 @@
+/* border radius */
+[class*='br1'],
+[border-radius='1'] {
+  border-radius: var(--border-radius--br1);
+}
+[class*='br2'],
+[border-radius='2'] {
+  border-radius: var(--border-radius--br2);
+}
+[class*='br3'],
+[border-radius='3'] {
+  border-radius: var(--border-radius--br3);
+}
+/* border width */
+[class*='bw1'],
+[border-width='1'] {
+  border-width: var(--border-width--bw1) !important;
+}
+[class*='bw2'],
+[border-width='2'] {
+  border-width: var(--border-width--bw2);
+}
+[class*='bw3'],
+[border-width='3'] {
+  border-width: var(--border-width--bw3);
+}
